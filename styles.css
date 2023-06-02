@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    border-style: solid;
+    border-width: 5px;
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.pixel {
+    background-color: white;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: black;
+    height: auto;
+    flex: 1 1 auto;
+}
+
+.hovered {
+    background-color: black;
+}
+
+#size-button {
+    margin-top: 24px;
+}
