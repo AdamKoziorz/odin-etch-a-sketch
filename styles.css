@@ -1,6 +1,18 @@
 body {
     margin: 0;
     padding: 0;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-color:lightpink;
+}
+
+h4 {
+    margin: 0;
+    padding: 8px;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px 0px 24px 0px;
 }
 
 .container {
@@ -15,24 +27,38 @@ body {
     display: grid;
     border-style: solid;
     border-width: 5px;
-    height: 500px;
-    width: 500px;
+    height: 450px;
+    width: 450px;
     margin: 0 auto;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,.4);
 }
 
 .pixel {
     background-color: white;
-    border-style: solid;
-    border-width: 0.5px;
-    border-color: black;
     height: auto;
     flex: 1 1 auto;
+    user-select: none;
+    border: solid;
+    border-color: black;
+    border-width: 0.25px;
 }
 
-.hovered {
+.draw {
     background-color: black;
 }
 
-#size-button {
+.buttons, .information {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 65px;
+}
+
+#mode-button, #dim-button, #clear-button {
+    background-color: white;
     margin-top: 24px;
+    padding: 4px 8px;
+}
+
+#mode-button:hover, #dim-button:hover, #clear-button:hover {
+    background-color: rgb(253, 229, 233)
 }
